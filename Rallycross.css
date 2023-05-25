@@ -267,7 +267,7 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 323px;
+    min-height: 401px;
   }
 
   .u-section-1 .u-text-1 {
@@ -360,8 +360,8 @@
   }
 
   .u-section-1 .u-social-icons-1 {
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 } .u-section-2 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/IMG_5608.jpg");
@@ -373,7 +373,7 @@
 }
 
 .u-section-2 .u-image-1 {
-  width: 200px;
+  width: 207px;
   height: 122px;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
@@ -1334,13 +1334,13 @@
   }
 
   .u-section-6 .u-list-1 {
-    height: auto;
-    width: 940px;
-    margin-left: calc(((100% - 1140px) / 2) + 100px);
+    width: 750px;
+    margin-top: 0;
+    margin-bottom: 1px;
   }
 
   .u-section-6 .u-repeater-1 {
-    grid-template-columns: calc(20% - 8px) calc(20% - 8px) calc(20% - 8px) calc(20% - 8px) calc(20% - 8px);
+    grid-auto-columns: calc(25% - 7.5px);
   }
 
   .u-section-6 .u-image-1 {
@@ -1370,12 +1370,14 @@
 
 @media (max-width: 991px) {
   .u-section-6 .u-list-1 {
+    height: auto;
     width: 720px;
     margin-left: calc(((100% - 1140px) / 2) + 210px);
   }
 
   .u-section-6 .u-repeater-1 {
     grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
+    grid-auto-columns: calc(33.3333% - 6.66667px);
   }
 
   .u-section-6 .u-image-1 {
@@ -1414,7 +1416,8 @@
   }
 
   .u-section-6 .u-repeater-1 {
-    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-auto-columns: calc(100% - 0px);
+    grid-template-columns: repeat(2, calc(50% - 5.0000025px));
   }
 
   .u-section-6 .u-container-layout-1 {
@@ -1479,10 +1482,14 @@
   }
 
   .u-section-6 .u-list-1 {
-    margin-top: 0;
     margin-right: initial;
     margin-left: initial;
     width: auto;
+  }
+
+  .u-section-6 .u-repeater-1 {
+    grid-auto-columns: 100%;
+    grid-template-columns: 100%;
   }
 
   .u-section-6 .u-image-1 {
